@@ -1,0 +1,40 @@
+.about__list {
+  display: flex;
+  padding-top: 96px;
+  padding-bottom: 84px;
+}
+
+.about__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.77;
+  color: $text-color-primary;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about__icon {
+  height: 65px;
+  width: 65px;
+  fill: $color-secondary;
+  margin-bottom: 55px;
+}
+
+.about__item {
+  flex-basis: (100% / 4 - 30 px);
+  margin-right: 39px;
+  flex-grow: 0;
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.about__text {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.71;
+  color: $text-color-primary;
+}

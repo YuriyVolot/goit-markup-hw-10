@@ -1,0 +1,103 @@
+.collection {
+  background-color: $bg-color-section;
+}
+
+.gallery__title,
+.collection__title {
+  margin-bottom: 130px;
+}
+
+.gallery__list,
+.collection__list {
+  display: flex;
+}
+
+.gallery__item,
+.collection__item {
+  flex-basis: calc(100% / 4 - 22.5px);
+  flex-grow: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.collection__image,
+.gallery__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection__link,
+.gallery__link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+  transition: background-color $time-animation $time-function;
+}
+
+.collection__coin,
+.gallery__coin {
+  display: flex;
+}
+
+.collection__text,
+.collection__price,
+.gallery__text,
+.gallery__price {
+  font-size: 18px;
+  font-family: $text-secondary;
+  font-weight: 900;
+}
+
+.collection__text,
+.gallery__text {
+  text-transform: uppercase;
+  padding-left: 13px;
+  padding-top: 13px;
+  margin: 0;
+  background-color: $bg-color-product-name;
+  color: $text-color-secondary;
+  flex-grow: 1;
+}
+
+.collection__price,
+.gallery__price {
+  padding: 13px;
+  margin: 0;
+  background-color: $bg-color-product-price;
+  color: $text-color-secondary;
+}
+
+.collection__link:hover .collection__text,
+.collection__-link:focus .collection__text,
+.gallery__link:hover .gallery__text,
+.gallery__ink:focus .gallery__text {
+  background-color: $color-secondary;
+}
+
+.collection__link:hover .collection__price,
+.collection__link:focus .collection__price,
+.gallery__link:hover .gallery__price,
+.gallery__link:focus .gallery__price {
+  background-color: $color-hover-product-price;
+}
+
+/* GALLERY */
+.gallery__list {
+  flex-wrap: wrap;
+}
+
+.collection__item:nth-child(4n),
+.gallery__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.collection__item:nth-last-child(-n + 4),
+.gallery__item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.gallery__image {
+  background-color: $bg-color-section;
+  height: 280px;
+}
